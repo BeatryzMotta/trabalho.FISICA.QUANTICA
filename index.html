@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física Quântica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bacgraud" id="bacgraud"></div>
+    <header>
+        <div class="fisica"><h1>Física Quântica</h1></div>
+        <div class="explore"><h2>Explorando o Mundo Invisível</h2></div>
+    </header>
+
+    <div class="atomo"><img src="./image/1751942176044.png" alt="" width="350" height="500"></div>
+
+    <div class="introdução">Você está pronto para descobrir um mundo magico, invísivel! e cheio de misterios? Vamos apreder Física Quântica!</div>
+     
+    <div class="background">
+    <div class="retangulos">
+      <a href="./o.que.html">
+        <button class="box"> <h2 class="ret">o que é Física Quântica</h2>
+            <img src="./image/1752260440514.png" alt="" width="250" height="500">
+        </button>
+      </a>
+      <a href="./o.que.html">
+        <button class="box"></button>
+        
+      </a>
+      <a href="">
+        <button class="box"></button>
+      </a>
+    </div>
+  </div>
+
+    
+    <!--criação das estrelas-->
+    <script>
+        const bg = document.getElementById('bacgraud')
+
+        for (let i = 0; i < 150; i++){
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * -100 + 'vh';
+            star.style.animationDuration = (10 + Math.random() * 30) + 's';
+            bg.appendChild(star);
+        }
+    </script>
+</body>
+</html>

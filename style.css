@@ -1,0 +1,137 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      color: #2e2e2e;
+      overflow-x: hidden;
+      background: #060a28;
+    }
+    .fisica{
+        justify-content: center;
+        color: rgb(248, 250, 252);
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 35px;
+    }
+    .explore{
+        justify-content: center;
+        color: #ffb61a;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+    .atomo{
+       justify-content: center;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        top: 30%;
+         animation: atomo 1.5s ease-in-out infinite;
+    }
+    @keyframes atomo{
+         0%, 100%{
+        transform: translateY(0);
+
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    }
+    .introdução{
+        justify-content: center;
+        font-size: 20px;
+        color: rgb(251, 250, 248);
+        align-items: center;
+        background: #0a2b9a;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 60%;
+        border-radius: 15px;
+    }
+  .background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 20px 20px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Container flexível com espaçamento */
+.retangulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilo dos boxes (retângulos) */
+.box {
+  flex: 1 1 300px;
+  max-width: 500px;
+  height: 200px;
+  width: 400px;
+  background: linear-gradient(to bottom right, #58089e, #810eba);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+.ret h2 {
+  color: #0a2b9a;
+  
+ 
+}
+ .bacgraud {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .star {
+      width: 10px;
+      height: 10px;
+      background: #ffb61a;
+      border-radius: 50%;
+      position: absolute;
+       box-shadow: 0 0 0 10px #ffb61a44, 
+     0 0  10px #ffb61a,
+     0 0  50px #ffb61a;
+     animation: moveStars  linear infinite;
+}
+    @keyframes moveStars {
+      0% { transform: translateY(0) scale(0); }
+      100% { transform: translateY(100vh) scale(1); }
+    }
